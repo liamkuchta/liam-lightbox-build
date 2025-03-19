@@ -1,0 +1,173 @@
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+/* General Styles */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Header */
+
+header {
+    background-color: rgb(71, 150, 68);
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px; */
+    padding: 10px 0 10px 0; /* trbl */
+    /* padding: 10px 0; */
+}
+
+#main-logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    /* x, y, blur radius, spread radius */
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,.5);
+}
+
+/* Main Character Nav */
+
+#character-nav {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #675050;
+    background-blend-mode:hard-light;
+}
+
+#characters {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#characters li {
+    display: inline;
+    margin: 10px;
+}
+
+#characters li img {
+    padding: 10px;
+    border: solid 1px #fff;
+    background-color: #000;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, .9);
+    transition: all .5s ease-in-out;
+}
+
+#characters li img:hover {
+    /* filter:blur(5px) grayscale(100%); */
+    filter: grayscale(100%);
+    /* border-radius: 50% 0 50% 0; */
+    border-radius: 50%;
+}
+
+#characters li a {
+    text-decoration: none;
+}
+
+/* Instructions */
+
+#instructions {
+    padding: 20px;
+}
+
+#instructions h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#instructions p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* footer */
+
+#main-footer {
+    color: #fff;
+    text-align: center;
+    height: 80px;
+    background-color: rgb(40, 37, 37);
+    padding: 20px 0 20px 0;
+}
+
+/* LightBox */
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .85);
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    display: none;
+}
+
+/* turn on the lightbox using the :target pseudo selector */
+/* This rule willl be dynamic, meaning .lightbox#lightbox1 or .lightbox#lightbox2 */
+.lightbox:target {
+    display: block;
+}
+
+#lightbox1 {
+    background-image: url('../images/shambo-bg.png');
+}
+
+#lightbox2 {
+    background-image: url('../images/russell-bg.png');
+}
+
+#lightbox3 {
+    background-image: url('../images/parv-bg.png');
+}
+
+#lightbox4 {
+    background-image: url('../images/tyson-bg.png');
+}
+
+#lightbox5 {
+    background-image: url('../images/kelley-bg.png');
+}
+
+#lightbox6 {
+    background-image: url('../images/shane-bg.png');
+}
+
+
+
+.lightbox-close {
+    margin-left: 90%;
+    color: #fff;
+    font-size: 45px;
+    text-decoration: none;
+}
+
+.lightbox article {
+    margin-left: 40%;
+    margin-top: 50px;
+    width: 600px;
+}
+
+.lb-heading {
+    font-size: 32px;
+}
+
+.lb-text {
+    line-height: 24px;
+}
